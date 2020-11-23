@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3>Input array: [1,-,9,-,9,-,3]</h3>
+<input type="button" onclick="changeValue();" value="Change -">
+<p>New Array is: <span id="result"></span></p>
+<script>
+    let arr = [1, '-', 9, '-', 9, '-', 3];
+    let newstring = '';
+     function changeValue(){
+         for(let i=0;i<arr.length;i++){
+             if (arr[i] === '-'){
+                 newstring += '_';
+             } else {
+                 newstring += arr[i];
+             }
+         }
+        document.getElementById('result').innerHTML = newstring;
+     }
+</script>
+</body>
+</html>

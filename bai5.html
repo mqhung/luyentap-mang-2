@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Check Array</title>
+</head>
+<body>
+<label for="string1">Chuỗi 1: </label>
+<input type="text" id="string1"> <br> <br>
+<label for="string2">Chuỗi 2: </label>
+<input type="text" id="string2"> <br> <br>
+<input type="button" onclick="checkString()" value="Check">
+<p>Kết luận: <span id="result"></span> </p>
+<script>
+    function checkString(){
+        let str1 = document.getElementById('string1').value;
+        let str2 = document.getElementById('string2').value;
+        if (str1.length == str2.length){
+            for (i=0;i<str1.length;i++){
+                if (str1[i] != str2[i]){
+                    document.getElementById('result').innerHTML = "2 chuỗi không giống nhau"
+                } else {
+                    document.getElementById('result').innerHTML = "2 chuỗi giống nhau"
+                }
+            }
+        } else {
+            document.getElementById('result').innerHTML = "2 chuỗi không giống nhau"
+        }
+    }
+</script>
+</body>
+</html>

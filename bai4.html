@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Count word in Array</title>
+</head>
+<body>
+<h3>Input array: [3,9,9,1,g,n,u,h,m,a,i]</h3>
+<input type="button" onclick="countNumber();" value="Find Sum">
+<p>Number in Array is: <span id="result"></span></p>
+<script>
+    let arr = [3,9,9,1,'g','n','u','h','m','a','i'];
+    let count = 0;
+    function countNumber(){
+        for (let i=0; i<arr.length; i++){
+            if (isNaN(arr[i]) == true){
+                count +=1;
+            }
+        }
+        document.getElementById('result').innerHTML = count;
+    }
+</script>
+</body>
+</html>

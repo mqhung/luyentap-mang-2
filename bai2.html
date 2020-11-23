@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Reverse Array</title>
+</head>
+<body>
+<h3>Input array: [3,9,9,1,g,n,u,h]</h3>
+<input type="button" onclick="reverseArray();" value="Reverse">
+<p>Output Array is: <span id="result"></span></p>
+<script>
+    let arr = [3,9,9,1,'g','n','u','h'];
+    function reverseArray(){
+        arr.reverse();
+        document.getElementById('result').innerHTML = arr.join("");
+    }
+</script>
+</body>
+</html>
